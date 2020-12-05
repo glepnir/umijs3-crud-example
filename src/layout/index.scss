@@ -1,0 +1,36 @@
+
+.layout {
+  height: 100vh;
+  :global {
+    .title {
+      height: 32px;
+      line-height: 32px;
+      background: rgba(255, 255, 255, 0.2);
+      margin: 16px;
+      text-align: center;
+      color: #fff;
+    }
+    .site-layout-header {
+      background: #fff;
+      padding: 0;
+    }
+    .site-layout-content {
+      background: #fff;
+      margin: 24px 16px;
+      padding: 24;
+      min-height: max-content;
+    }
+    .site-layout-footer {
+      text-align: center;
+    }
+    .trigger {
+      padding: 0 24px;
+      font-size: 20px;
+      cursor: pointer;
+      line-height: 64px;
+      transition: all 0.3s;
+      &.fold {transform: rotate(180deg);}
+      &:hover { background-color: #d1e3fa;}
+    }
+  }
+}
